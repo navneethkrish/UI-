@@ -1,0 +1,228 @@
+body {
+    font-family: omnes-semicond, sans-serif;font-size: 14px;
+}
+
+.container-fluid{
+    width:100%;
+    margin-right:auto;
+    margin-left:auto
+}
+
+.flex-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+
+.sidenavbar{
+  width:16.44%;
+  height:100vh;
+  background-color:white;
+  border:#ebebeb solid 1px;
+  box-shadow: 1px 1px 2px #ebebeb;
+}
+
+.content {
+   width:83.2%;
+   background-color:#f5f5f5;
+   border:#ebebeb solid 1px;
+   box-shadow: 1px 1px 2px #ebebeb;
+   height:100vh;
+}
+
+.crm-desk {
+   display:flex;
+   flex-wrap: row nowrap;
+   width:auto;
+   height:50px;
+   box-shadow: 1px 1px 2px #ebebeb;
+   background-image:
+   linear-gradient(to right, #075cff , #387bfc);
+}
+
+ .crm-logo {
+   padding-top:12px;
+   padding-left:30px;
+   width:40px;
+   height:25px;
+}
+
+.crm-text-white {
+  padding-top:15px;
+  padding-left:15px;
+  color:white;
+  width:auto;
+  height:auto;
+ }
+
+ .sidemenu {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display:flex;
+   flex-flow: row nowrap;
+   -webkit-flex-flow: row nowrap;
+   width:auto;
+   height:40px;
+ }
+
+.sidemenutext {
+   padding-top: 18px;
+   padding-left:12px;
+   font-weight:bold;
+   color:grey;
+   width:auto;
+   height:auto;
+ }
+
+.sidelogo {
+  padding-top:15px;
+  padding-left:30px;
+  width:auto;
+  height:auto;
+}
+
+
+ hr.bar {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display:flex;
+  flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  border:#ebebeb solid 1px;
+  background-color: white;
+  width:100%;
+  height: 50px;
+}
+
+.search {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display:flex;
+  flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  width:75%;
+}
+
+.searchlogo {
+  padding-top:15px;
+  padding-left:30px;
+}
+
+.searcharea {
+  padding-top:15px;
+  padding-left:15px;
+}
+
+.notificationlogo{
+  padding-top:15px;
+  padding-left:30px;
+}
+
+.dropdown {
+  padding-top:17px;
+  padding-left:5px;
+}
+
+.loginpersonimage{
+   padding-top:10px;
+   padding-left:30px;
+}
+
+.loginname{
+  colur:black;
+  font-size:13px;
+  padding-top:15px;
+  padding-left:10px;
+}
+
+input.searchbox{
+  border:0px !important;
+  background-color:white;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.menubar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display:flex;
+  flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  padding-top:40px;
+  padding-left:20px;
+  width:100%;
+  height:auto;
+}
+
+.invoices {
+  font-size:16px;
+  font-weight:bold;
+  width:64.5%;
+  height:auto;
+}
+
+.type{
+  colur:black;
+  font-size:12px;
+  font-weight:bold;
+  padding-left:12px;
+  height:auto;
+}
+
+.typebutton{
+   border:#ebebeb solid 1px;
+   box-shadow: 1px 1px 2px #ebebeb;
+   background-color:white;
+   padding-left : 8px;
+   padding-right: 8px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+
+.cards{
+  padding-left : 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display:flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  width:100%;
+  height:auto;
+}
+
+.card {
+   width:220px;
+   height:180px;
+   padding-top: 20px;
+   padding-left : 20px;
+   background-color: white;
+   border:#ebebeb solid 1px;
+   box-shadow: 1px 1px 2px #ebebeb;
+}
