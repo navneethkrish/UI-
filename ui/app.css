@@ -5,7 +5,7 @@ body {
 .container-fluid{
     width:100%;
     margin-right:auto;
-    margin-left:auto
+    margin-left:auto;
 }
 
 .flex-container {
@@ -18,20 +18,35 @@ body {
     -webkit-flex-flow: row wrap;
 }
 
+.col-2{
+   -webkit-box-flex:0;
+   -ms-flex:0 0 16.666667%;
+    flex:0 0 16.666667%;
+    max-width:16.666667%
+    box-shadow: 5px 1px 3px #ebebeb;
+}
+
+.col-10{
+   -webkit-box-flex:0;
+   -ms-flex:0 0 83.333333%;
+    flex:0 0  83.333333%;
+    max-width: 83.333333%
+}
+
 .sidenavbar{
-  width:16.44%;
-  height:100vh;
+  width:auto;
+  height:802px;
   background-color:white;
   border:#ebebeb solid 1px;
-  box-shadow: 1px 1px 2px #ebebeb;
+  box-shadow: 5px 1px 3px #ebebeb;
 }
 
 .content {
-   width:83.2%;
+   width:auto;
    background-color:#f5f5f5;
    border:#ebebeb solid 1px;
-   box-shadow: 1px 1px 2px #ebebeb;
-   height:100vh;
+   box-shadow: 1px 1px 3px #ebebeb;
+   height:auto;
 }
 
 .crm-desk {
@@ -68,12 +83,21 @@ body {
    flex-flow: row nowrap;
    -webkit-flex-flow: row nowrap;
    width:auto;
-   height:40px;
+   height:45px;
+ }
+
+ .sidemenu:hover {
+   background-color:#f2f6ff;
+   border-left-color:blue;
+   border-left-width:4px;
+   border-left-style:solid;
+   color:blue !important; 
  }
 
 .sidemenutext {
    padding-top: 18px;
-   padding-left:12px;
+   padding-left: 12px;
+   padding-bottom: 10px;
    font-weight:bold;
    color:grey;
    width:auto;
@@ -83,6 +107,7 @@ body {
 .sidelogo {
   padding-top:15px;
   padding-left:30px;
+  padding-bottom: 10px;
   width:auto;
   height:auto;
 }
@@ -90,7 +115,7 @@ body {
 
  hr.bar {
   border: 0;
-  height: 1px;
+  height: 0.5px;
   background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
@@ -107,7 +132,8 @@ body {
   -webkit-flex-flow: row nowrap;
   border:#ebebeb solid 1px;
   background-color: white;
-  width:100%;
+  box-shadow: 0px 3px 3px #ebebeb;
+  width:auto;
   height: 50px;
 }
 
@@ -171,58 +197,141 @@ input.searchbox{
   -webkit-flex-flow: row nowrap;
   padding-top:40px;
   padding-left:20px;
-  width:100%;
+  padding-right:20px;
+  padding-bottom:20px;
+  width:auto;
   height:auto;
 }
 
 .invoices {
   font-size:16px;
   font-weight:bold;
-  width:64.5%;
+  width:63%;
   height:auto;
 }
 
-.type{
-  colur:black;
+.type {
+  color:black;
   font-size:12px;
   font-weight:bold;
-  padding-left:12px;
+  padding-left:21px;
   height:auto;
 }
 
+
+
+.blue {
+  background-image:
+   linear-gradient(to right, #075cff , #387bfc);
+}
 .typebutton{
    border:#ebebeb solid 1px;
-   box-shadow: 1px 1px 2px #ebebeb;
+   box-shadow: 3px 3px 5px #ebebeb;
    background-color:white;
    padding-left : 8px;
    padding-right: 8px;
-   padding-top: 5px;
-   padding-bottom: 5px;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   
 }
 
 
 .cards{
+  display: grid;
+  grid-template-columns: auto auto auto;
   padding-left : 20px;
   padding-right: 20px;
   padding-top: 20px;
-  padding-bottom: 20px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display:flex;
-  flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
-  width:100%;
+  padding-bottom:10px;
+  grid-column-gap:20px;
+  grid-row-gap:40px; 
+  width:auto;
   height:auto;
 }
 
-.card {
-   width:220px;
-   height:180px;
-   padding-top: 20px;
-   padding-left : 20px;
+.card { 
+   width:292px;
+   height:200px;
+   padding-left:15px;
+   padding-right:15px;
+   padding-top:10px;
+   padding-bottom:10px;
    background-color: white;
-   border:#ebebeb solid 1px;
-   box-shadow: 1px 1px 2px #ebebeb;
+   border:grey solid 1px #ebebeb;
+   box-shadow: 5px 5px 4px #ebebeb;
+}
+
+.work {
+  float:left;
+  color:grey;
+  font-size:14px;
+  padding-bottom:10px; 
+}
+
+.cardMenu {
+  padding-bottom:10px;
+  float:right;
+}
+
+.price {
+  clear:both;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:15px;
+  padding-bottom:15px;
+  background-color: white;
+  width:auto;
+  height:90px;
+  border:#ebebeb dotted 3px;
+}
+
+.invoiceId {
+  float:left;
+  color:grey;
+  font-size:12px; 
+}
+
+.priceInRupees {
+  clear:both;
+  float:left;  
+  color:black;
+  font-size:20px;
+  font-weight: bold;
+  padding-top:15px;
+
+}
+
+.dueDate {
+  float:right;
+  color:black;
+  font-size:20px;
+  padding-top:15px;
+  font-weight: bold;
+}
+
+.due {
+  float:left;
+  color:grey;
+  font-size:12px;
+  padding-top:8px;
+  padding-bottom:17px; 
+}
+
+.priceIn {
+  float:right;
+  color:grey;
+  font-size:12px;
+  padding-top:8px;
+  padding-bottom:17px;
+  padding-right:80px; 
+}
+
+.personInfo {
+  float:left;
+  padding-top:15px; 
+}
+
+.personName {
+  padding-left:35px;
+  padding-top:20px;
 }
