@@ -35,7 +35,7 @@ body {
 
 .sidenavbar{
   width:auto;
-  height:802px;
+  height:912px;
   background-color:white;
   border:#ebebeb solid 1px;
   box-shadow: 5px 1px 3px #ebebeb;
@@ -91,7 +91,7 @@ body {
    border-left-color:blue;
    border-left-width:4px;
    border-left-style:solid;
-   color:blue !important; 
+   color:blue !important;
  }
 
 .sidemenutext {
@@ -206,7 +206,7 @@ input.searchbox{
 .invoices {
   font-size:16px;
   font-weight:bold;
-  width:63%;
+  width:60%;
   height:auto;
 }
 
@@ -217,9 +217,6 @@ input.searchbox{
   padding-left:21px;
   height:auto;
 }
-
-
-
 .blue {
   background-image:
    linear-gradient(to right, #075cff , #387bfc);
@@ -232,7 +229,7 @@ input.searchbox{
    padding-right: 8px;
    padding-top: 7px;
    padding-bottom: 7px;
-   
+
 }
 
 
@@ -244,12 +241,12 @@ input.searchbox{
   padding-top: 20px;
   padding-bottom:10px;
   grid-column-gap:20px;
-  grid-row-gap:40px; 
+  grid-row-gap:40px;
   width:auto;
   height:auto;
 }
 
-.card { 
+.card {
    width:292px;
    height:200px;
    padding-left:15px;
@@ -265,7 +262,7 @@ input.searchbox{
   float:left;
   color:grey;
   font-size:14px;
-  padding-bottom:10px; 
+  padding-bottom:10px;
 }
 
 .cardMenu {
@@ -288,12 +285,12 @@ input.searchbox{
 .invoiceId {
   float:left;
   color:grey;
-  font-size:12px; 
+  font-size:12px;
 }
 
 .priceInRupees {
   clear:both;
-  float:left;  
+  float:left;
   color:black;
   font-size:20px;
   font-weight: bold;
@@ -304,7 +301,7 @@ input.searchbox{
 .dueDate {
   float:right;
   color:black;
-  font-size:20px;
+  font-size:16px;
   padding-top:15px;
   font-weight: bold;
 }
@@ -314,7 +311,7 @@ input.searchbox{
   color:grey;
   font-size:12px;
   padding-top:8px;
-  padding-bottom:17px; 
+  padding-bottom:17px;
 }
 
 .priceIn {
@@ -323,12 +320,12 @@ input.searchbox{
   font-size:12px;
   padding-top:8px;
   padding-bottom:17px;
-  padding-right:80px; 
+  padding-right:80px;
 }
 
 .personInfo {
   float:left;
-  padding-top:15px; 
+  padding-top:15px;
 }
 
 .personName {
