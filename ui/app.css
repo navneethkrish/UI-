@@ -1,7 +1,14 @@
+html { font-size: 62.5%; }
+
 body {
-    font-family: omnes-semicond, sans-serif;font-size: 14px;
+  font-family: omnes-pro, sans-serif;
+font-style: normal;
+font-weight: 400;
 }
 
+@-moz-document url-prefix() {
+    html,body{overflow: hidden !important;}
+}
 .container-fluid{
     width:100%;
     margin-right:auto;
@@ -33,43 +40,44 @@ body {
     max-width: 83.333333%
 }
 
-.sidenavbar{
+.sidenavbar {
   width:auto;
-  height:912px;
+  height:100vh;
   background-color:white;
-  border:#ebebeb solid 1px;
-  box-shadow: 5px 1px 3px #ebebeb;
+  border:#ebebeb solid 0.1rem;
+  box-shadow: 0.5rem 0.1rem 0.3rem #ebebeb;
 }
 
 .content {
    width:auto;
    background-color:#f5f5f5;
-   border:#ebebeb solid 1px;
-   box-shadow: 1px 1px 3px #ebebeb;
-   height:auto;
+   border:#ebebeb solid 0.1rem;
+   box-shadow: 0.1rem 0.1rem 0.3rem #ebebeb;
+   height:100vh;
 }
 
-.crm-desk {
+.sidenavbar .crm-desk {
    display:flex;
    flex-wrap: row nowrap;
    width:auto;
-   height:50px;
-   box-shadow: 1px 1px 2px #ebebeb;
+   height:5rem;
+   box-shadow: 0.1rem 0.1rem 0.2rem #ebebeb;
    background-image:
-   linear-gradient(to right, #075cff , #387bfc);
+   linear-gradient(to right, #075cff , #689cff);
 }
 
- .crm-logo {
-   padding-top:12px;
-   padding-left:30px;
-   width:40px;
-   height:25px;
+.crm-desk .crm-logo {
+   padding-top:1.2rem;
+   padding-left:3rem;
+   width:4rem;
+   height:2.5rem;
 }
 
-.crm-text-white {
-  padding-top:15px;
-  padding-left:15px;
+.crm-desk .crm-text-white {
+  padding-top:1.5rem;
+  padding-left:1.5rem;
   color:white;
+  font-size:1.5rem;
   width:auto;
   height:auto;
  }
@@ -83,45 +91,84 @@ body {
    flex-flow: row nowrap;
    -webkit-flex-flow: row nowrap;
    width:auto;
-   height:45px;
- }
+   height:4.5rem;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+}
 
- .sidemenu:hover {
-   background-color:#f2f6ff;
-   border-left-color:blue;
-   border-left-width:4px;
+.side {
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display:flex;
+   flex-flow: row nowrap;
+   -webkit-flex-flow: row nowrap;
+   width:100%;
+   border-left-color:white;
+   border-left-width:0.4rem;
    border-left-style:solid;
-   color:blue !important;
- }
+}
+
+.sidemenu:hover {
+   background-color:#f2f6ff;
+}
+
+.sidemenu:hover .side {
+   background-color:#f2f6ff;
+   color:#075cff;
+   border-left-color:#075cff;
+}
+
+.sidemenu:hover .sidemenutext {
+    color:#075cff;
+}
+
+.sidemenu:hover .iconstyle {
+    color:#075cff;
+}
+
+.active {
+   border-left-color:#075cff;
+   color:#075cff !important;
+}
 
 .sidemenutext {
-   padding-top: 18px;
-   padding-left: 12px;
-   padding-bottom: 10px;
+   padding-top: 1.3rem;
+   padding-left: 1.2rem;
    font-weight:bold;
    color:grey;
+   font-size:1.2rem;
    width:auto;
    height:auto;
  }
 
 .sidelogo {
-  padding-top:15px;
-  padding-left:30px;
-  padding-bottom: 10px;
+  padding-top:1rem;
+  padding-left:3rem;
   width:auto;
   height:auto;
 }
 
 
+
  hr.bar {
-  border: 0;
-  height: 0.5px;
+  border: 0.0rem;
+  height: 0.05rem;
   background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 }
 
+ hr.tooltipbar {
+   border: 0.0rem;
+   height: 0.05rem;
+   background-image: -webkit-linear-gradient(left,#075cff , #689cff, #075cff);
+   background-image: -moz-linear-gradient(left, #075cff , #689cff, #075cff);
+   background-image: -ms-linear-gradient(left, #075cff , #689cff, #075cff);
+   background-image: -o-linear-gradient(left,  #075cff , #689cff, #075cff);
+}
 .navbar {
   display: -webkit-box;
   display: -moz-box;
@@ -130,14 +177,14 @@ body {
   display:flex;
   flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
-  border:#ebebeb solid 1px;
+  border:#ebebeb solid 0.1rem;
   background-color: white;
-  box-shadow: 0px 3px 3px #ebebeb;
+  box-shadow: 0.0rem 0.3rem 0.3rem #ebebeb;
   width:auto;
-  height: 50px;
+  height: 5rem;
 }
 
-.search {
+.navbar .search {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -148,36 +195,75 @@ body {
   width:75%;
 }
 
-.searchlogo {
-  padding-top:15px;
-  padding-left:30px;
+.search  .searchlogo {
+  padding-top:1.5rem;
+  padding-left:3.0rem;
 }
 
-.searcharea {
-  padding-top:15px;
-  padding-left:15px;
+.search  .searcharea {
+  padding-top:1.5rem;
+  padding-left:1.5rem;
 }
 
-.notificationlogo{
-  padding-top:15px;
-  padding-left:30px;
+.notification-badge {
+    position:relative;
 }
 
-.dropdown {
-  padding-top:17px;
-  padding-left:5px;
+.notification-badge[data-badge]:after {
+    content:attr(data-badge);
+    position:absolute;
+    top:-0.5rem;
+    right:0.4rem;
+    font-size:.7em;
+    background:red;
+    color:white;
+    width:.5rem;height:.5rem;
+    text-align:center;
+    line-height:1.8rem;
+    border-radius:50%;
+    box-shadow:0 0 0.1rem #333;
 }
 
-.loginpersonimage{
-   padding-top:10px;
-   padding-left:30px;
+.message-batch {
+    position:relative;
 }
 
-.loginname{
-  colur:black;
-  font-size:13px;
-  padding-top:15px;
-  padding-left:10px;
+.message-batch[data-badge]:after {
+    content:attr(data-badge);
+    position:absolute;
+    top:0.3rem;
+    right:-50px;
+    font-size:1em;
+    background:red;
+    color:white;
+    width:1rem;
+    height:1rem;
+    text-align:center;
+    line-height:1.8rem;
+    border-radius:50%;
+    box-shadow:0 0 0.1rem #333;
+}
+
+.navbar .notificationlogo{
+  padding-top:1.5rem;
+  padding-left:3.0rem;
+}
+
+.navbar .dropdown {
+  padding-top:1.7rem;
+  padding-left:0.5rem;
+}
+
+.navbar .loginpersonimage{
+   padding-top:1rem;
+   padding-left:3rem;
+}
+
+.navbar .loginname{
+  color:#626060;
+  font-size:1.3rem;
+  padding-top:1.5rem;
+  padding-left:1rem;
 }
 
 input.searchbox{
@@ -188,147 +274,264 @@ input.searchbox{
 }
 
 .menubar {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display:flex;
-  flex-flow: row nowrap;
-  -webkit-flex-flow: row nowrap;
-  padding-top:40px;
-  padding-left:20px;
-  padding-right:20px;
-  padding-bottom:20px;
+  padding-top:4rem;
+  padding-left:4rem;
+  padding-right:4rem;
+  padding-bottom:4rem;
   width:auto;
   height:auto;
 }
 
-.invoices {
-  font-size:16px;
+.menubar .invoices {
+  float:left;
+  font-size:1.6rem;
+  color:#626060;
   font-weight:bold;
-  width:60%;
   height:auto;
 }
 
-.type {
-  color:black;
-  font-size:12px;
-  font-weight:bold;
-  padding-left:21px;
-  height:auto;
-}
 .blue {
-  background-image:
-   linear-gradient(to right, #075cff , #387bfc);
+  background-color:#0057ff !important;
+  color:white !important;
 }
-.typebutton{
-   border:#ebebeb solid 1px;
-   box-shadow: 3px 3px 5px #ebebeb;
-   background-color:white;
-   padding-left : 8px;
-   padding-right: 8px;
-   padding-top: 7px;
-   padding-bottom: 7px;
 
+.menubar .type {
+  float:right;
+  padding-left:3rem;
 }
+
+.menubar .typebutton{
+   color:#626060;
+   font-size:1.2rem;
+   font-weight:bold;
+   height:auto;
+   border:#ebebeb solid 0.1rem;
+   box-shadow: 0.3rem 0.3rem 0.5rem #ebebeb;
+   background-color:white;
+   padding-left: 0.8rem;
+   padding-right: 0.8rem;
+   padding-top: 0.7rem;
+   padding-bottom: 0.7rem;
+}
+
 
 
 .cards{
+  overflow-y: scroll;
   display: grid;
   grid-template-columns: auto auto auto;
-  padding-left : 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom:10px;
-  grid-column-gap:20px;
-  grid-row-gap:40px;
-  width:auto;
+  padding-left : 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom:1rem;
+  grid-column-gap:4rem;
+  grid-row-gap:4rem;
+  width: auto;
   height:auto;
+  max-height:75%;
+  -moz-scrollbar{ display: none; }
+ }
+
+i.iconstyle {
+  font-size:2rem;
+  color:b1b1b1;
 }
 
-.card {
-   width:292px;
-   height:200px;
-   padding-left:15px;
-   padding-right:15px;
-   padding-top:10px;
-   padding-bottom:10px;
+
+::-webkit-scrollbar {
+    width: 0rem;  /* remove scrollbar space */
+}
+
+
+.cards .card {
+
+   width:27rem;
+   height:20.05rem;
+   padding-left:1.5rem;
+   padding-right:1.5rem;
+   padding-top:1.0rem;
+   padding-bottom:1.0rem;
    background-color: white;
-   border:grey solid 1px #ebebeb;
-   box-shadow: 5px 5px 4px #ebebeb;
+   border:grey solid 0.1rem #ebebeb;
+   box-shadow: 0.5rem 0.5rem 0.4rem #ebebeb;
 }
 
-.work {
+.card .work {
   float:left;
   color:grey;
-  font-size:14px;
-  padding-bottom:10px;
+  font-weight:600;
+  font-size:1.3rem;
+  padding-bottom:1.0rem;
 }
 
-.cardMenu {
-  padding-bottom:10px;
+.card .cardmenu {
   float:right;
+  position: relative;
+  display: inline-block;
+  padding-bottom:1.0rem;
+
 }
 
-.price {
+.cardmenu:hover .iconstyle{
+    color:#075cff;
+}
+
+.card .price {
   clear:both;
-  padding-left:15px;
-  padding-right:15px;
-  padding-top:15px;
-  padding-bottom:15px;
+  position: relative;
+  display: inline-block;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+  padding-top:1.5rem;
+  padding-bottom:1.5rem;
   background-color: white;
   width:auto;
-  height:90px;
+  height:8rem;
   border:#ebebeb dotted 3px;
 }
 
-.invoiceId {
+.card .invoiceId {
   float:left;
   color:grey;
-  font-size:12px;
+  font-weight:bold;
+  font-size:0.9rem;
 }
 
-.priceInRupees {
+.card .priceInRupees {
   clear:both;
   float:left;
-  color:black;
-  font-size:20px;
+  color:#626060;
+  font-size:1.4rem;
   font-weight: bold;
-  padding-top:15px;
+  padding-top:1.5rem;
 
 }
 
-.dueDate {
+.card .dueDate {
   float:right;
-  color:black;
-  font-size:16px;
-  padding-top:15px;
+  color:#626060;
+  font-size:1.4rem;
+  padding-top:1.5rem;
   font-weight: bold;
 }
 
-.due {
-  float:left;
-  color:grey;
-  font-size:12px;
-  padding-top:8px;
-  padding-bottom:17px;
-}
-
-.priceIn {
+.card .due {
   float:right;
   color:grey;
-  font-size:12px;
-  padding-top:8px;
-  padding-bottom:17px;
-  padding-right:80px;
+  font-size:1.0rem;
+  padding-top:0.8rem;
+  padding-bottom:1.7rem;
+  padding-right:4.0rem;
 }
 
-.personInfo {
+.card .priceIn {
   float:left;
-  padding-top:15px;
+  color:grey;
+  font-size:1.0rem;
+  padding-top:0.8rem;
+  padding-bottom:1.7rem;
 }
 
-.personName {
-  padding-left:35px;
-  padding-top:20px;
+.card .personInfo {
+  float:left;
+  padding-top:2.5rem;
+}
+
+.card .personName {
+  position: relative;
+  display: inline-block;
+  color:grey;
+  font-size:1.2rem;
+  padding-left:1.5rem;
+  padding-top:3.0rem;
+}
+
+.card a.idlink{
+  font-size:1.2rem;
+  padding-left:0.25rem;
+  padding-top:3.0rem;
+  color:#075cff !important;
+  text-decoration:none;
+}
+
+.personName .usertip {
+    visibility: hidden;
+    width: 12rem;
+    background-color:#474545;
+    color: #fff;
+    font-size:1rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 37%;
+    margin-left: -6rem;
+}
+
+.personName .usertip::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -0.5rem;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: transparent transparent #474545 transparent;
+}
+
+.personName:hover .usertip {
+    visibility: visible;
+}
+
+.cardmenu .menutip {
+  visibility: hidden;
+  width: 12rem;
+  height: auto;
+  background-color:#474545;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: -187%;
+  margin-left: -6rem;
+}
+
+.cardmenu:hover .menutip {
+    visibility: visible;
+}
+
+.price .tooltiptext {
+    width: 20rem;
+    background-color: #075cff;
+    color: #fff;
+    text-align: center;
+    border-radius:0.2rem;
+    padding: 0.5rem 0;
+    position:absolute;
+    z-index:1000;
+    bottom: 107%;
+    left: 34%;
+    margin-left: -6rem;
+
+}
+
+.price .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -0.5rem;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color:#075cff transparent transparent transparent;
+}
+
+.tooltiptext .size{
+  font-size=0.9rem;
+}
+.price:hover .tooltiptext {
+    visibility: visible;
 }
