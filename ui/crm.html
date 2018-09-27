@@ -1,132 +1,481 @@
-
 <html>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <head>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" type="text/css" href="app.css">
    </head>
 <body>
 <div class="container-fluid">
-<div class="flex-container">
-   <div class="sidenavbar">
-        <div class="crm-desk">
-              <div class="crm-logo">
-              <img src ="crmlogo.png" style="width:40px;height:25px"/>
+	<div class="flex-container">
+	   <div class="col-2">
+	       <div class="side-navbar">
+			   <div class="crm-desk">
+			          <div class="crm-logo">
+			          <img src ="crmlogo.png" class="crm"/>
+			          </div>
+			          <div class="crm-text-white">CRM-Desk
+			          </div>
+                <i id="menu" class="fa fa-bars mobile-menu-icon" aria-hidden="true"></i>
+          </div>
+			    <br class="newline">
+			    <div class="side-menu">
+               <div class="side">
+			          <div class="side-logo">
+                <i class="fa fa-tachometer iconstyle"></i>
+                </div>
+			          <div class="side-menu-text">
+			          Dashboard
+			          </div>
+                </div>
+			    </div>
+			    <div class="side-menu">
+                <div class="side">
+			          <div class="side-logo">
+                  <i class="fa fa-eercast iconstyle" aria-hidden="true"></i>
+                </div>
+			          <div class="side-menu-text">
+			          Projects
+			          </div>
               </div>
-              <div class="crm-text-white">CRM-Desk
+			    </div>
+			    <div class="side-menu">
+                <div class="side">
+			          <div class="side-logo">
+                  <i class="fa fa-tasks iconstyle" aria-hidden="true"></i>
+                </div>
+			          <div class="side-menu-text">
+			          Task
+			          </div>
               </div>
-        </div>
-        <br>
-        <div class="sidemenu">
-              <div class="sidelogo">
-              <img src ="reuse.png" style="width:20px;height:20px"/>
+			    </div>
+			    <div class="side-menu">
+                <div class="side active">
+			          <div class="side-logo">
+                <i class="fa fa-telegram iconstyle active" aria-hidden="true" ></i>
+                </div>
+			          <div class="side-menu-text active">
+			          Invoice
+			          </div>
+                </div>
+			    </div>
+			    <div class="side-menu">
+                <div class="side">
+			          <div class="side-logo">
+                <i class="fa fa-comments iconstyle" aria-hidden="true" ></i>
+               </div>
+			          <div class="side-menu-text">
+			          Message
+			          </div>
+                <div class="sidemenutext">
+                <a class="message-batch" data-badge></a>
+                </div>
+               </div>
+			    </div>
+			    <div class="side-menu">
+                <div class="side">
+			          <div class="side-logo">
+                  <i class="fa fa-bar-chart iconstyle" aria-hidden="true" ></i>
+                </div>
+			          <div class="side-menu-text">
+			          Reports
+			          </div>
               </div>
-              <div class="sidemenutext">
-              Dashbroad
+			    </div>
+			    <br class="newline">
+			    <hr class="bar">
+			    <br class="newline">
+			    <div class="side-menu">
+               <div class="side">
+			          <div class="side-logo">
+                <i class="fa fa-cogs iconstyle" aria-hidden="true" ></i>
+			          </div>
+			          <div class="side-menu-text">
+			          Settings
+			          </div>
               </div>
-        </div>
-        <div class="sidemenu">
-              <div class="sidelogo">
-              <img src ="project.png" style="width:20px;height:20px"/>
-             </div>
-              <div class="sidemenutext">
-              Projects
+			    </div>
+			    <div class="side-menu">
+                <div class="side">
+			          <div class="side-logo">
+                  <i class="fa fa-users iconstyle" aria-hidden="true"></i>
+                </div>
+			          <div class="side-menu-text">
+			          Contact Support
+			          </div>
               </div>
-        </div>
-        <div class="sidemenu">
-              <div class="sidelogo">
-              <img src ="speech-bubble.png" style="width:20px;height:20px"/>
-              </div>
-              <div class="sidemenutext">
-              Task
-              </div>
-        </div>
-        <div class="sidemenu">
-              <div class="sidelogo">
-              <img src ="telephone.png" style="width:20px;height:20px"/>
-              </div>
-              <div class="sidemenutext">
-              Invoice
-              </div>
-        </div>
-        <div class="sidemenu">
-              <div class="sidelogo">
-              <img src ="speech-bubble.png" style="width:20px;height:20px"/>
-              </div>
-              <div class="sidemenutext">
-              Message
-              </div>
-        </div>
-        <div class="sidemenu">
-              <div class="sidelogo">
-              <img src ="diagram.png" style="width:20px;height:20px"/>
-              </div>
-              <div class="sidemenutext">
-              Reports
-              </div>
-        </div>
-        <br>
-        <hr class="bar">
-        <br>
-        <div class="sidemenu">
-              <div class="sidelogo">
-              <img src ="settings.png" style="width:20px;height:20px"/>
-              </div>
-              <div class="sidemenutext">
-              Settings
-              </div>
-        </div>
-        <div class="sidemenu">
-              <div class="sidelogo">
-              <img src ="verified-contact.png" style="width:20px;height:20px"/>
-              </div>
-              <div class="sidemenutext">
-              Contact Support
-              </div>
-        </div>
-  </div>
-    <div class="content">
-         <div class="navbar">
-              <div class="search">
-              <div class="searchlogo">
-              <img src ="search.png" style="width:15px;height:15px"/>
-              </div>
-              <div class="searcharea">
-              <input type="text" class="searchbox" placeholder="Search.."/>
-              </div>
-              </div>
-              <div class="notificationlogo">
-              <img src ="notification.png" style="width:20px;height:20px"/>
-              </div>
-              <div class="loginpersonimage">
-              <img src ="alex.png" style="width:30px;height:30px;border-radius:25px"/>
-              </div>
-              <div class="loginname">
-              Alexdra daddario
-              </div>
-              <div class="dropdown">
-              <i class="fa fa-angle-down"></i>
-              </div>
-        </div>
-        <div class="menubar">
-             <div class="invoices">Invoices</div>
-             <div class="type">
-                <buttom class="typebutton">Invoice Type&nbsp;<i class="fa fa-angle-down"></i>&nbsp;</buttom>
-             </div>
-             <div class="type">
-                <buttom class="typebutton">Category&nbsp;<i class="fa fa-angle-down"></i>&nbsp;</buttom>
-             </div>
-             <div class="type">
-                <buttom class="typebutton">Create Invoice&nbsp;<i class="fa fa-angle-down"></i>&nbsp;</buttom>
-             </div>
-        </div>
+			    </div>
+	        </div>
+	    </div>
+	    <div class="col-10">
+
+		    <div class="content">
+		         <div class="navbar">
+		              <div class="search">
+		              <div class="search-logo">
+		              <img src ="search.png" style="width:15px;height:15px"/>
+		              </div>
+		              <div class="search-area">
+		              <input type="text" style="outline:none"class="searchbox" placeholder="Search.."/>
+		              </div>
+		              </div>
+		              <div class="notification-logo">
+                  <a class="notification-badge" data-badge>
+                           <i class="fa fa-bell-o" style="font-size:22px;color:b1b1b1"></i></a>
+		              </div>
+		              <div class="login-person-image">
+		              <img src ="alex.png" class="login-image"/>
+		              </div>
+		              <div class="login-name">
+		              Alexdra daddario
+		              </div>
+		              <div class="dropdown">
+		              <i class="fa fa-angle-down"></i>
+		              </div>
+		        </div>
+		        <div class="menubar">
+		            <div class="invoices">Invoices</div>
+                <div class="menu">
+                <buttom class="menu-button">Invoice Type&ensp;<i class="fa fa-angle-down"></i>&nbsp;</buttom>
+                &ensp;
+                <buttom class="menu-button">Category&ensp;<i class="fa fa-angle-down"></i>&nbsp;</buttom>
+                &ensp;
+                <buttom class="menu-button blue">Create Invoice&ensp;</buttom>
+                </div>
+          </div>
         <div class="cards">
-             <div class="card">
-
-
-             </div>
-        </div>
+		        	 <div class="card">
+                      <div class="work">
+                      User Interface Design
+                      </div>
+                      <div class="cardmenu">
+                      <i class="fa fa-commenting-o iconstyle" aria-hidden="true"></i>
+                      <span class="menutip"><br>See details<br><br>Download<br><br>Edit<br><br>Delete<br><br></span>
+                      </div>
+                      <div class="price">
+                         <div class="invoiceId">
+                         Invoice = #4kyqe
+                         </div>
+                         <div class="priceInRupees">
+                         $ 2,40,000
+                         </div>
+                         <div class="dueDate">
+                         08 Aug, 2017
+                         </div>
+                         <div class="due">
+                         Due Date
+                         </div>
+                         <div class="priceIn">
+                         Amount
+                         </div>
+                      </div>
+                      <div class="personinfo">
+                      <img src ="alex.png"  class="person-image"/>
+                      </div>
+                      <div class="personName">
+                      Alexdra daddario<a class="idlink" href="#">@Uneo</a>
+                      <span class="usertip" style="visibility:visible"><b>Alexdra</b><br>Product Manager</span>
+                      </div>
+              </div>
+		          <div class="card">
+                      <div class="work">
+                      User Interface Design
+                      </div>
+                      <div class="cardmenu">
+                      <i class="fa fa-commenting-o iconstyle" aria-hidden="true"></i>
+                      <span class="menutip"><br>See details<br><br>Download<br><br>Edit<br><br>Delete<br><br></span>
+                      </div>
+                      <div class="price">
+                         <div class="invoiceId">
+                         Invoice = #4kyqe
+                         </div>
+                         <div class="priceInRupees">
+                         $ 2,40,000
+                         </div>
+                         <div class="dueDate">
+                         08 Aug, 2017
+                         </div>
+                         <div class="due">
+                         Due Date
+                         </div>
+                         <div class="priceIn">
+                         Amount
+                         </div>
+                      </div>
+                      <div class="personinfo">
+                     <img src ="alex.png"  class="person-image"/>
+                      </div>
+                      <div class="personName">
+                      Alexdra daddario<a class="idlink" href="#">@Uneo</a>
+                      <span class="usertip"><b>Alexdra</b><br>Product Manager</span>
+                      </div>
+              </div>
+              <div class="card">
+                      <div class="work">
+                      User Interface Design
+                      </div>
+                      <div class="cardmenu">
+                      <i class="fa fa-commenting-o iconstyle" aria-hidden="true"></i>
+                      <span class="menutip"><br>See details<br><br>Download<br><br>Edit<br><br>Delete<br><br></span>
+                      </div>
+                      <div class="price">
+                         <div class="invoiceId">
+                         Invoice = #4kyqe
+                         </div>
+                         <div class="priceInRupees">
+                         $ 2,40,000
+                         </div>
+                         <div class="dueDate">
+                         08 Aug, 2017
+                         </div>
+                         <div class="due">
+                         Due Date
+                         </div>
+                         <div class="priceIn">
+                         Amount
+                         </div>
+                      </div>
+                      <div class="personinfo">
+                      <img src ="alex.png"  class="person-image"/>
+                      </div>
+                      <div class="personName">
+                      Alexdra daddario<a class="idlink" href="#">@Uneo</a>
+                      <span class="usertip"><b>Alexdra</b><br>Product Manager</span>
+                      </div>
+              </div>
+              <div class="card">
+                      <div class="work">
+                      User Interface Design
+                      </div>
+                      <div class="cardmenu">
+                      <i class="fa fa-commenting-o iconstyle" aria-hidden="true"></i>
+                      <span class="menutip"><br>See details<br><br>Download<br><br>Edit<br><br>Delete<br><br></span>
+                      </div>
+                      <div class="price">
+                         <div class="invoiceId">
+                         Invoice = #4kyqe
+                         </div>
+                         <div class="priceInRupees">
+                         $ 2,40,000
+                         </div>
+                         <div class="dueDate">
+                         08 Aug, 2017
+                         </div>
+                         <div class="due">
+                         Due Date
+                         </div>
+                         <div class="priceIn">
+                         Amount
+                         </div>
+                      </div>
+                      <div class="personinfo">
+                      <img src ="alex.png"  class="person-image"/>
+                      </div>
+                      <div class="personName">
+                      Alexdra daddario<a class="idlink" href="#">@Uneo</a>
+                      <span class="usertip"><b>Alexdra</b><br>Product Manager</span>
+                      </div>
+              </div>
+              <div class="card">
+                      <div class="work">
+                      User Interface Design
+                      </div>
+                      <div class="cardmenu">
+                      <i class="fa fa-commenting-o iconstyle" aria-hidden="true"></i>
+                      <span class="menutip"><br>See details<br><br>Download<br><br>Edit<br><br>Delete<br><br></span>
+                      </div>
+                      <div class="price">
+                         <div class="invoiceId">
+                         Invoice = #4kyqe
+                         </div>
+                         <div class="priceInRupees">
+                         $ 2,40,000
+                         </div>
+                         <div class="dueDate">
+                         08 Aug, 2017
+                         </div>
+                         <div class="due">
+                         Due Date
+                         </div>
+                         <div class="priceIn">
+                         Amount
+                         </div>
+                         <span class="tooltiptext">
+                         <br>
+                         <b>Invoice</b>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;#34556567<br>
+                         <span style="font-size:0.9rem">04 Aug 2017 -08 Oct 2017</span> &emsp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<br>
+                         <br><span style="font-size:0.9rem">Total hours</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;<b>120</b><br>
+                         <br><span style="font-size:0.9rem">RupeesPerHour</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<b>$60</b><br>
+                         <br><span style="font-size:0.9rem">Total</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;<b>$7200</b><br>
+                         <br><span style="font-size:0.9rem">Tax</span>&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;<b>$1000</b><br>
+                         <br>
+                         <hr class="tooltipbar">
+                         <br><span style="font-size:0.9rem">Final Amount</span>&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&nbsp;<b>$8200</b>
+                         <br>
+                         <br>
+                         </span>
+                      </div>
+                      <div class="personinfo">
+                      <img src ="alex.png"  class="person-image"/>
+                      </div>
+                      <div class="personName">
+                      Alexdra daddario<a class="idlink" href="#">@Uneo</a>
+                      <span class="usertip"><b>Alexdra</b><br>Product Manager</span>
+                </div>
+              </div>
+              <div class="card">
+                      <div class="work">
+                      User Interface Design
+                      </div>
+                      <div class="cardmenu">
+                      <i class="fa fa-commenting-o iconstyle" style="color:#075cff" aria-hidden="true"></i>
+                      <span class="menutip" style="visibility:visible"><br>See details<br><br>Download<br><br>Edit<br><br>Delete<br><br></span>
+                      </div>
+                      <div class="price">
+                         <div class="invoiceId">
+                         Invoice = #4kyqe
+                         </div>
+                         <div class="priceInRupees">
+                         $ 2,40,000
+                         </div>
+                         <div class="dueDate">
+                         08 Aug, 2017
+                         </div>
+                         <div class="due">
+                         Due Date
+                         </div>
+                         <div class="priceIn">
+                         Amount
+                         </div>
+                      </div>
+                      <div class="personinfo">
+                      <img src ="alex.png"  class="person-image"/>
+                      </div>
+                      <div class="personName">
+                      Alexdra daddario<a class="idlink" href="#">@Uneo</a>
+                      <span class="usertip"><b>Alexdra</b><br>Product Manager</span>
+                      </div>
+              </div>
+              <div class="card">
+                      <div class="work">
+                      User Interface Design
+                      </div>
+                      <div class="cardmenu">
+                      <i class="fa fa-commenting-o iconstyle" aria-hidden="true"></i>
+                      <span class="menutip"><br>See details<br><br>Download<br><br>Edit<br><br>Delete<br><br></span>
+                      </div>
+                      <div class="price">
+                         <div class="invoiceId">
+                         Invoice = #4kyqe
+                         </div>
+                         <div class="priceInRupees">
+                         $ 2,40,000
+                         </div>
+                         <div class="dueDate">
+                         08 Aug, 2017
+                         </div>
+                         <div class="due">
+                         Due Date
+                         </div>
+                         <div class="priceIn">
+                         Amount
+                         </div>
+                      </div>
+                      <div class="personinfo">
+                      <img src ="alex.png"  class="person-image"/>
+                      </div>
+                      <div class="personName">
+                      Alexdra daddario<a class="idlink" href="#">@Uneo</a>
+                      <span class="usertip"><b>Alexdra</b><br>Product Manager</span>
+                      </div>
+              </div>
+              <div class="card">
+                      <div class="work">
+                      User Interface Design
+                      </div>
+                      <div class="cardmenu">
+                      <i class="fa fa-commenting-o iconstyle" aria-hidden="true"></i>
+                      <span class="menutip"><br>See details<br><br>Download<br><br>Edit<br><br>Delete<br><br></span>
+                      </div>
+                      <div class="price">
+                         <div class="invoiceId">
+                         Invoice = #4kyqe
+                         </div>
+                         <div class="priceInRupees">
+                         $ 2,40,000
+                         </div>
+                         <div class="dueDate">
+                         08 Aug, 2017
+                         </div>
+                         <div class="due">
+                         Due Date
+                         </div>
+                         <div class="priceIn">
+                         Amount
+                         </div>
+                      </div>
+                      <div class="personinfo">
+                      <img src ="alex.png"  class="person-image"/>
+                      </div>
+                      <div class="personName">
+                      Alexdra daddario<a class="idlink" href="#">@Uneo</a>
+                      <span class="usertip"><b>Alexdra</b><br>Product Manager</span>
+                      </div>
+              </div>
+              <div class="card">
+                      <div class="work">
+                      User Interface Design
+                      </div>
+                      <div class="cardmenu">
+                      <i class="fa fa-commenting-o iconstyle" aria-hidden="true"></i>
+                      <span class="menutip"><br>See details<br><br>Download<br><br>Edit<br><br>Delete<br><br></span>
+                      </div>
+                      <div class="price">
+                         <div class="invoiceId">
+                         Invoice = #4kyqe
+                         </div>
+                         <div class="priceInRupees">
+                         $ 2,40,000
+                         </div>
+                         <div class="dueDate">
+                         08 Aug, 2017
+                         </div>
+                         <div class="due">
+                         Due Date
+                         </div>
+                         <div class="priceIn">
+                         Amount
+                         </div>
+                      </div>
+                      <div class="personinfo">
+                      <img src ="alex.png"  class="person-image"/>
+                      </div>
+                      <div class="personName">
+                      Alexdra daddario<a class="idlink" href="#">@Uneo</a>
+                      <span class="usertip"><b>Alexdra</b><br>Product Manager</span>
+                      </div>
+                    </div>
+                    <button class="add-more "> +
+                    </button>
+               </div>
+           </div>
+	    </div>
     </div>
-</div>
-</div>
+   </div>
 </body>
+<script>
+   document.getElementById("menu").addEventListener("click", showMenu);
+   function showMenu() {
+      console.log("*******");
+       var sidemenu = document.getElementsByClassName("side-menu");
+       for(var i=0; i<sidemenu.length; i++) {
+         var content = sidemenu[i];
+       if (content.style.display === "none") {
+          content.style.display = "inline";
+       } else {
+          content.style.display = "none";
+       }
+     }
+    }
+</script>
 </html>
